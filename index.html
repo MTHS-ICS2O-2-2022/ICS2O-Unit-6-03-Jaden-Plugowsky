@@ -1,9 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="My first website using an API" />
+    <meta name="keywords" content="mths, ics2o" />
+    <meta name="author" content="Jaden Plugowsky" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Change colours here at https://getmdl.io/customize/index.html -->
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.blue-light_blue.min.css"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <title>Weather Website</title>
   </head>
   <body>
-    <p>Paragraph</p>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- Page content is below this div -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title" id="header-fix">Weather</span>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <!-- Put non-header content HERE -->
+        <br />
+        <div class="mdl-content">The weather is:</div>
+        <!-- Answer to be replaced using JS -->
+        <div class="page-content-answer">
+          <div id="api-image">Not Loaded</div>
+          <div id="temperature">Not Loaded</div>
+          <div id="feels-like">Not Loaded</div>
+          <div id="weather-description">Not Loaded</div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
