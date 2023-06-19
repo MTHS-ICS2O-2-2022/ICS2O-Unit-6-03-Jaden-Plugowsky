@@ -6,26 +6,13 @@
 
 "use strict"
 
-function buttonOneClicked() {
-  //This function does XXXX
-  //Input through Textfields
-  const example = parseFloat(document.getElementById("example").value)
-
-  //Process
-  const answer = example
-
-  //Output
-  document.getElementById("answer").innerHTML =
-    "The answer is: " + answer.toFixed(2)
-}
-
 /**
  * Get API info.
  */
 // code from: https://www.youtube.com/watch?v=670f71LTWpM
 
 const getWeather = async (URLAddress) => {
-  // This takes the weather from the API website, then placing it on my website
+  // This function takes the weather from the API website, then placing it on my website
   try {
     const result = await fetch(URLAddress)
     const jsonData = await result.json()
